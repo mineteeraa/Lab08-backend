@@ -8,7 +8,7 @@ import se331.lab.rest.entity.Event;
 import se331.lab.rest.repository.EventRepository;
 
 @Component
-public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
+public class InitAppEvent implements ApplicationListener<ApplicationReadyEvent> {
     @Autowired
     EventRepository eventRepository;
 
